@@ -1,0 +1,152 @@
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0f172a;
+color:white;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:15px 30px;
+background:#020617;
+border-bottom:1px solid #1e293b;
+}
+
+.logo{
+font-size:18px;
+font-weight:bold;
+}
+
+.status{
+display:flex;
+align-items:center;
+gap:8px;
+font-size:14px;
+}
+
+.dot{
+width:10px;
+height:10px;
+background:#22c55e;
+border-radius:50%;
+}
+
+.hero{
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#94a3b8;
+}
+
+.hero button{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+background:#3b82f6;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+.chatbot-button{
+position:fixed;
+right:25px;
+bottom:25px;
+width:65px;
+height:65px;
+background:#3b82f6;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:26px;
+cursor:pointer;
+}
+
+.chat-container{
+position:fixed;
+right:25px;
+bottom:100px;
+width:350px;
+height:480px;
+background:white;
+color:black;
+border-radius:14px;
+display:flex;
+flex-direction:column;
+overflow:hidden;
+box-shadow:0 20px 60px rgba(0,0,0,0.3);
+transform:scale(0);
+transition:0.3s;
+}
+
+.chat-container.active{
+transform:scale(1);
+}
+
+.chat-header{
+background:#3b82f6;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+}
+
+.chat-body{
+flex:1;
+padding:15px;
+overflow-y:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+background:#f1f5f9;
+}
+
+.user{
+align-self:flex-end;
+background:#3b82f6;
+color:white;
+padding:10px 14px;
+border-radius:12px;
+max-width:70%;
+}
+
+.bot{
+align-self:flex-start;
+background:white;
+padding:10px 14px;
+border-radius:12px;
+max-width:70%;
+border:1px solid #e2e8f0;
+}
+
+.chat-input-area{
+display:flex;
+padding:10px;
+border-top:1px solid #e2e8f0;
+}
+
+.chat-input-area input{
+flex:1;
+padding:10px;
+border:1px solid #cbd5f5;
+border-radius:6px;
+}
+
+.chat-input-area button{
+margin-left:8px;
+padding:10px 15px;
+border:none;
+background:#3b82f6;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}

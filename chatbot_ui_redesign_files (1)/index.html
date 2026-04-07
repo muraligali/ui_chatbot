@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart AI Chat Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">🤖 Smart AI Assistant</div>
+    <div class="status">
+        <span class="dot"></span>
+        Online
+    </div>
+</header>
+
+<section class="hero">
+<h1>AI Chat Assistant</h1>
+<p>Ask anything. Get instant AI responses powered by Rasa.</p>
+<button onclick="toggleChat()">Open Chat</button>
+</section>
+
+<div class="chatbot-button" id="chatButton" onclick="toggleChat()">
+💬
+</div>
+
+<div class="chat-container" id="chatContainer">
+
+<div class="chat-header">
+AI Assistant
+<span onclick="toggleChat()" class="close">✖</span>
+</div>
+
+<div class="chat-body" id="chatBox"></div>
+
+<div class="chat-input-area">
+<input type="text" id="userInput" placeholder="Type your message..." />
+<button id="sendBtn">Send</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
